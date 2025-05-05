@@ -28,7 +28,7 @@ use ASCOOS\FRAMEWORK\Kernel\Strings\Str;
 echo Str::of('  Ascoos Text  ')
     ->trim()
     ->upper()
-    ->slug('-'); // Output: ASCOOS-TEXT
+    ->slug('-', false); // Output: ASCOOS-TEXT
 
 // Check if string contains a substring
 if (Str::of('Hello World')->contains('World')) {
